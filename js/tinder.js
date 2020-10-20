@@ -173,10 +173,12 @@ function windowResized(){
 }
 
 function preload(){
-  //instructions
-  instructions = createImg("images2/instructions.png", "instructions that read press spacebar to clear")
-  instructions.position(1292,6);
-	instructions.size(370, 90);
+
+	tinder = loadImage("images2/backgroundimage.png");
+  // //instructions
+  // instructions = createImg("images2/instructions.png", "instructions that read press spacebar to clear")
+  // instructions.position(1292,6);
+	// instructions.size(370, 90);
 
 //main images
   eye1 = loadImage("images/eyes/eye1.png");
@@ -377,10 +379,7 @@ function draw(){
   //background
   createCanvas(windowWidth, windowHeight);
   imageMode(CORNERS);
-  tinder = createImg("images2/tindertemplate.png", "image of tinder profile")
-  tinder.position (600,25);
-  tinder.size (480,840);
-	background (255, 188, 237);
+	background(tinder, windowWidth, windowHeight);
 
   // eye1
 	if(brusheye1 == true){
