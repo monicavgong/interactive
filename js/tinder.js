@@ -174,7 +174,7 @@ function windowResized(){
 
 function preload(){
   //instructions
-  instructions = createImg("images2/instructions.png")
+  instructions = createImg("images2/instructions.png", "instructions that read press spacebar to clear")
   instructions.position(1292,6);
 	instructions.size(370, 90);
 
@@ -238,19 +238,19 @@ function setup(){
   imageMode(CENTER);
 
 //menu images
-  menueye1 = createImg("images2/menu/eye1menu.png")
+  menueye1 = createImg("images2/menu/eye1menu.png", "image of an eye")
   menueye1.mouseReleased(menueye1Draw);
   menueye1.position (20,160);
 
-  menueye2 = createImg("images2/menu/eye2menu.png")
+  menueye2 = createImg("images2/menu/eye2menu.png", "image of an eye")
   menueye2.mouseReleased(menueye2Draw);
   menueye2.position (20,245);
 
-  menueye3 = createImg("images2/menu/eye3menu.png")
+  menueye3 = createImg("images2/menu/eye3menu.png", "image of an eye")
   menueye3.mouseReleased(menueye3Draw);
   menueye3.position (20,330);
 
-  menueye4 = createImg("images2/menu/eye4menu.png")
+  menueye4 = createImg("images2/menu/eye4menu.png", "image of an eye")
   menueye4.mouseReleased(menueye4Draw);
   menueye4.position (20,415);
 
@@ -377,29 +377,27 @@ function draw(){
   //background
   createCanvas(windowWidth, windowHeight);
   imageMode(CORNERS);
-  tinder = createImg("images2/tindertemplate.png")
+  tinder = createImg("images2/tindertemplate.png", "image of tinder profile")
   tinder.position (600,40);
   tinder.size (500,860);
-  
+
   // eye1
 	if(brusheye1 == true){
 	 image(eye1mouse, mouseX, mouseY);
 	 noCursor()
 	}
 
-	for (var i = 0; i < eye1X.length; i++) {
-		image (eye1, eye1X[i], eyeY[i]);
+	for (let i = 0; i < eye1X.length; i++) {
+		image(eye1, eye1X[i], eye1Y[i], 60, 60);
 
 	}
 }
 
 function mousePressed(){
-  if (brusheye1 == true){
-		if(mouseX > 100){
-
+  if(brusheye1 == true){
+	if(mouseX > 100){
 			eye1X.push(mouseX);
 		  eye1Y.push(mouseY);
-
 		}
   }
 }
