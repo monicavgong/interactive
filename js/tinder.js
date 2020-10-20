@@ -378,8 +378,9 @@ function draw(){
   createCanvas(windowWidth, windowHeight);
   imageMode(CORNERS);
   tinder = createImg("images2/tindertemplate.png", "image of tinder profile")
-  tinder.position (600,40);
-  tinder.size (500,860);
+  tinder.position (600,25);
+  tinder.size (480,840);
+	background (255, 189, 237);
 
   // eye1
 	if(brusheye1 == true){
@@ -388,7 +389,7 @@ function draw(){
 	}
 
 	for (let i = 0; i < eye1X.length; i++) {
-		image(eye1, eye1X[i], eye1Y[i], 60, 60);
+		image(eye1, eye1X[i], eye1Y[i]);
 
 	}
 }
