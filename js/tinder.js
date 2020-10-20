@@ -380,7 +380,7 @@ function draw(){
   tinder = createImg("images2/tindertemplate.png", "image of tinder profile")
   tinder.position (600,25);
   tinder.size (480,840);
-	background (255, 189, 237);
+	background (255, 188, 237);
 
   // eye1
 	if(brusheye1 == true){
