@@ -401,3 +401,72 @@ function mousePressed(){
 		}
   }
 }
+
+function keyPressed(){
+
+//clear
+
+if (event.code === 'Space') {
+	console.log('Space pressed')
+
+		eye1X.splice(0, eye1X.length);
+		eye1Y.splice(0, eye1Y.length);
+
+		eye2X.splice(0, eye2X.length);
+		eye2Y.splice(0, eye2Y.length);
+
+		eye3X.splice(0, eye3X.length);
+		eye3Y.splice(0, eye3Y.length);
+
+		eye4X.splice(0, eye4X.length);
+		eye4Y.splice(0, eye4Y.length);
+
+		ear1X.splice(0, ear1X.length);
+		ear1Y.splice(0, ear1Y.length);
+
+		ear2X.splice(0, ear2X.length);
+		ear2Y.splice(0, ear2Y.length);
+
+		ear3X.splice(0, ear3X.length);
+		ear3Y.splice(0, ear3Y.length);
+
+		ear4X.splice(0, ear4X.length);
+		ear4Y.splice(0, ear4Y.length);
+
+		nose1X.splice(0, nose1X.length);
+		nose1Y.splice(0, nose1Y.length);
+
+		nose2X.splice(0, nose2X.length);
+		nose2Y.splice(0, nose2Y.length);
+
+		nose3X.splice(0, nose3X.length);
+		nose3Y.splice(0, nose3Y.length);
+
+		nose4X.splice(0, nose4X.length);
+		nose4Y.splice(0, nose4Y.length);
+
+		mouth1X.splice(0, mouth1X.length);
+		mouth1Y.splice(0, mouth1Y.length);
+
+		mouth2X.splice(0, mouth2X.length);
+		mouth2Y.splice(0, mouth2Y.length);
+
+		mouth3X.splice(0, mouth3X.length);
+		mouth3Y.splice(0, mouth3Y.length);
+
+		mouth4X.splice(0, mouth4X.length);
+		mouth4Y.splice(0, mouth4Y.length);
+
+		bio1X.splice(0, bio1X.length);
+		bio1Y.splice(0, bio1Y.length);
+
+		bio2X.splice(0, bio2X.length);
+		bio2Y.splice(0, bio2Y.length);
+
+		bio3X.splice(0, bio3X.length);
+		bio3Y.splice(0, bio3Y.length);
+
+		bio4X.splice(0, bio4X.length);
+		bio4Y.splice(0, bio4Y.length);
+	}
+}
