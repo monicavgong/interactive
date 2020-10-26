@@ -333,10 +333,9 @@ function preload(){
 
 	bg = loadImage("images2/pinkbg.png");
 	tinder = loadImage("images2/tindertemplate.png");
-  // //instructions
-  // instructions = createImg("images2/instructions.png", "instructions that read press spacebar to clear")
-  // instructions.position(1292,6);
-	// instructions.size(370, 90);
+
+  //instructions
+  instructions = loadImage("images2/instructions.png", "instructions that read press spacebar to clear")
 
 //main images
   eye1 = loadImage("images/eyes/eye1.png");
@@ -2869,7 +2868,9 @@ function draw(){
 	background(bg, windowWidth, windowHeight);
 	imageMode(CENTER);
 	image(tinder, 820, 446, 1242/2.5, 2208/2.5);
+	image(instructions, 820, 386, 1168/3, 314/3);
 
+print(instructions)
   // eye1
 	if(brusheye1 == true){
 	 image(eye1mouse, mouseX, mouseY);
